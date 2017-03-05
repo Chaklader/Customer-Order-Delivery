@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>TestCode</groupId>
+  <artifactId>TestCode</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SkubanaTest</name>
+  <dependencies>
+   <dependency>  
+  <groupId>org.springframework</groupId>  
+  <artifactId>spring-core</artifactId>  
+  <version>3.1.2.RELEASE</version>  
+ </dependency>  
+<dependency>
+ <groupId>org.springframework</groupId>  
+ <artifactId>spring-jdbc</artifactId>  
+ <version>3.1.2.RELEASE</version>  
+</dependency> 
+ <!-- we want Spring to manage our transactions -->  
+ <dependency>  
+  <groupId>org.springframework</groupId>  
+  <artifactId>spring-tx</artifactId>  
+  <version>3.1.2.RELEASE</version>  
+ </dependency>                
+   
+ <!-- Spring annotations work via proxies which use CGLIB -->  
+ <dependency>  
+  <groupId>cglib</groupId>  
+  <artifactId>cglib-nodep</artifactId>  
+  <version>2.2.2</version>  
+ </dependency>  
+                
+   
+ <!-- TEST DEPENDENCIES -->  
+ <!-- provides the Spring JUnit test runner & @ContextConfiguration -->  
+ <dependency>  
+  <groupId>org.springframework</groupId>  
+  <artifactId>spring-test</artifactId>  
+  <version>3.1.2.RELEASE</version>  
+  <scope>test</scope>  
+ </dependency>              
+ <!-- to run our tests with -->  
+ <dependency>  
+  <groupId>junit</groupId>  
+  <artifactId>junit</artifactId>  
+  <version>4.10</version>  
+  <scope>test</scope>  
+ </dependency>          
+ <!-- our in-memory database provider -->       
+ <dependency>  
+  <groupId>org.hsqldb</groupId>  
+  <artifactId>hsqldb</artifactId>  
+  <version>2.2.9</version>  
+  <scope>test</scope>  
+ </dependency>  
+                                         
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
