@@ -14,8 +14,6 @@ In the Package Explorer window in Eclipse, open the "src" folder.
 In the JUnit window you should see Runs at 6/6, Errors at 3, and Failures at 2
 	If you don't see these numbers or were unable to get to this step, there may be a problem in your project setup. 
 	Please contact the test administrator before proceeding.
-	
-Your task is to complete the code in the com.skubana.solution package so that Errors and Failures are both at 0. You have 90 minutes.
 
 Some notes:
 	-Review db.sql and data.sql in the data directory. The first file defines the database structure, the second populates the database with test data.
